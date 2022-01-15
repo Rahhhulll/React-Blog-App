@@ -19,7 +19,7 @@ const Home = () => {
         <div className="flex2">
             <div className="hc1">
             {category.filter(data=>data.id==="1").map((latest)=>(
-            <Link to="/tollywood" key={category.id} className="hcc1">
+              <Link to={`/tollywood/${latest.id}`}className="hcc1">
               <div className="himg"><img src={latest.img} alt="" /></div>
               <div className="c1h3"><h3>{latest.det}</h3></div>
               <div className="c1h5"><h5>{latest.date}</h5></div>
@@ -28,7 +28,7 @@ const Home = () => {
           </div>
           <div className="hc1">
           {category.filter(data=>data.id==="5").map((latest)=>(
-            <Link to='/technology' key={category.id} className="hcc1">
+            <Link to={`/technology/${latest.id}`} className="hcc1">
             <div className="himg"><img src={latest.img} alt="" /></div>
             <div className="c1h3"><h3>{latest.det}</h3></div>
             <div className="c1h5"><h5>{latest.date}</h5></div>
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             <div className="hc1">
             {category.filter(data=>data.id==="9").map((latest)=>(
-              <Link to="/nature" key={category.id} className="hcc1">
+              <Link to = {`/nature/${latest.id}`} className="hcc1">
               <div className="himg"><img src={latest.img} alt="" /></div>
               <div className="c1h3"><h3>{latest.det}</h3></div>
               <div className="c1h5"><h5>{latest.date}</h5></div>
@@ -52,7 +52,7 @@ const Home = () => {
             <hr className="hlhr"/>
             <div className="hc2">
             {category.filter(data=>data.id==="2").map((latest)=>(
-              <Link to="/tollywood" key={category.id} className="hcc2">
+              <Link to={`/tollywood/${latest.id}`} className="hcc2">
               <div className="tollyi"><img src={latest.img} alt="" /></div>
               <div className="tollyt"><h3>{latest.det}</h3></div>
               <div className="c2h5"><h5>{latest.date}</h5></div>
@@ -61,7 +61,7 @@ const Home = () => {
           </div><hr className="f50per"/>
           <div className="hc2">
           {category.filter(data=>data.id==="6").map((latest)=>(
-          <Link to='/technology' key={category.id} className="hcc2">
+          <Link to={`/technology/${latest.id}`} className="hcc2">
             <div className="tollyi"><img src={latest.img} alt="" /></div>
             <div className="tollyt"><h3>{latest.det}</h3></div>
             <div className="c2h5"><h5>{latest.date}</h5></div>
@@ -70,7 +70,7 @@ const Home = () => {
             </div><hr className="f50per"/>
             <div className="hc2">
             {category.filter(data=>data.id==="12").map((latest)=>(
-            <Link to="/nature" key={category.id} className="hcc2">
+            <Link to={`/jobs/${latest.id}`} className="hcc2">
               <div className="tollyi"><img src={latest.img} alt="" /></div>
               <div className="tollyt"><h3>{latest.det}</h3></div>
               <div className="c2h5"><h5>{latest.date}</h5></div>
